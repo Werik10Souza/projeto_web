@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'noto-sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-formulario{
+    width: 95vw;
+    height: 135vh;
+    background: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rigth-formulario{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-formulario > h1{
+    color: #df1717d7;
+}
+
+.right-formulario-image{
+    font-size: 3vw;
+    width: 35vw;
+}
+
+.left-formulario{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-formulario{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #f7f4f4;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000053;
+}
+
+.card-formulario > h1{
+    color: #fd0404;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fbfbfb;
+    color: #080808;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000014;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #fd0404;
+    margin-bottom: 10px;
+}
+
+.textfield > input ::placeholder{
+    color: #f7f4f4;
+}
+
+p > input{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #f7f4f4;
+    background: #f71111;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #fa4a4a;
+}
+
+@media only screen and (max-width: 950px){
+    .card-formulario{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-formulario{
+        flex-direction: column;
+    }
+    .right-formulario > h1{
+        display: none;
+    }
+    .rigth-formulario{
+        width: 100%;
+        height: auto;
+    }
+    .right-formulario-image{
+        width: 90%;
+    }
+}
